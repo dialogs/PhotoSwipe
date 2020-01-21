@@ -1,5 +1,5 @@
 {
-  "name": "photoswipe",
+  "name": "@dlghq/photoswipe",
   "version": "4.1.3",
   "engines": {
     "node": ">= 0.8.0"
@@ -23,11 +23,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/dimsemenov/Photoswipe.git"
+    "url": "git@github.com:dialogs/PhotoSwipe.git"
   },
   "description": "JavaScript gallery",
   "bugs": {
-    "url": "https://github.com/dimsemenov/Photoswipe/issues"
+    "url": "https://github.com/dialogs/PhotoSwipe/issues"
   },
   "homepage": "https://photoswipe.com",
   "main": "dist/photoswipe.js",
