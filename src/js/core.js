@@ -775,11 +775,15 @@ var publicMethods = {
 
 		self.updateCurrItem();
 	},
-	next: function() {
-		self.goTo( _currentItemIndex + 1);
+	next: function () {
+		if (_options.loop || _currentItemIndex < _getNumItems() - 1) {
+			self.goTo(_currentItemIndex + 1);
+		}
 	},
-	prev: function() {
-		self.goTo( _currentItemIndex - 1);
+	prev: function () {
+		if (_options.loop || _currentItemIndex > 0) {
+			self.goTo(_currentItemIndex - 1);
+		}
 	},
 
 	// update current zoom/pan objects
